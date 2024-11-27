@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>troubleshootingpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- adding external CSS -->
+    <link rel="stylesheet" href="css/styletroubleshoot.css">
+</head>
+<body>
+    <h1 id="hd"><span id="hd1">Repacks Troubleshooting</span></h1>
+
+    <p id="hd2">These steps will help you to solve typical problems, which can appear while installing repacks (mine included) and running installed games.</p>
+
+    <h1 id="hd3">Essential advices</h1>
+    <h2 id="hd4">
+        Before reading further, make sure you are through the following steps:-
+    </h2>
+    <h2>
+        Your Windows username have to be latin-only (numbers allowed too)
+    </h2>
+    <p>
+        Many games and cracks (especially latest CODEX ones) do not properly work on accounts with non-latin symbols. Also complex repacks can use additional software which also may crash while running in “ВАСЯ” username folder. So change your username once and for all. Or better yet, create new latin-name user in Windows and completely switch to it. That way the folder name will be a good one and all above-mentioned software and cracks will work.
+    </p>
+    <ul>
+        <li><a class="link" href="http://answers.microsoft.com/en-us/windows/forum/windows_7-security/how-to-change-user-name-in-windows-7-professional/d95ddaa7-4235-454e-83d6-77232207c7e2" target="_blank" rel="noopener noreferrer">How to change user name in Windows 7 Professional?</a></li>
+        <li><a class="link" href="http://www.isunshare.com/windows-10/3-ways-to-change-user-account-name-in-windows-10.html" target="_blank" rel="noopener noreferrer">How to change user name in Windows 10?</a></li>
+    </ul>
+    <h2>Make sure you have enough Virtual Memory</h2>
+    <p>
+        If you have 4 GB of RAM, set virtual memory to 8 GB (Custom size: set both initial and maximum size to 8192)
+        <br>
+        If you have 8 GB of RAM, set virtual memory to 16 GB (Custom size: set both initial and maximum size to 16384).
+        <br>
+        f you have 16 GB of RAM, set virtual memory also to 16 GB (Custom size: set both initial and maximum size to 16384)
+        <br>
+        If you have 32 GB of RAM, set virtual memory also to 8 GB (Custom size: set both initial and maximum size to 8192) just in case.
+        <br>
+        Do not set “System managed size”, cause its slower. Fixed VM size is the most efficient setting.
+    </p>
+    <ul>
+        <li><a class="link" href="https://www.youtube.com/watch?v=fM2EMCuq7cU" target="_blank" rel="noopener noreferrer">How to change Virtual Memory size in Windows 7 (video)</a></li>
+        <li><a class="link" href="https://www.youtube.com/watch?v=NkHjRKFUnNc" target="_blank" rel="noopener noreferrer">How to change Virtual Memory size in Windows 10 (video)</a></li>
+    </ul>
+    <h2>Use 2 GB Memory Limit option</h2>
+    <p>
+        For a while my installers have an option of limiting the RAM usage to 2 GB. If your machine has 8 GB of RAM or less, always use it. 8 GB RAM is a very low amount nowadays, with browsers alone eating half of that size.
+    </p>
+    <h2>Run the setup with Windows 7 compatibility</h2>
+    <p>
+        If you are using Windows 10 and have errors with missing files or something like this, run the setup.exe with compatibility set to Windows 7. And run it as admin.
+    </p>
+    <h2>Run the setup in Safe Mode</h2>
+    <p>
+        Some antiviruses cannot ever be turned off completely and will delete necessary files even when you think you turned them off. You did not. They know better. So in that case reboot in Safe mode and install again. No crapware will interrupt in the installation process.
+    </p>
+    <h2>Make sure you have enough free space on target drive</h2>
+    <p>
+        DO NOT ignore the “No enough disk space” message, if the installer says so. Also its recommended to NOT install repacks on drives, which have just a few more Gigabytes of space left after installation. During installations with low memory available installer may eat more free space it stated.
+    </p>
+    <h2>Turn off any heavy load on the target drive</h2>
+    <p>
+        If you have torrents active on the same physical drive, on which you are installing the game and this drive is not SSD expect REALLY LONG installation. Any application, creating constant heavy load on your disk will drive you mad while your installation. You can continue seeding after you install the game.
+    </p>
+    <h2>Try install the game NOT to C:  drive OR specifically to C: drive</h2>
+    <p>
+        Windows rights system is a tricky thing. If you are not a proper admin in your OS, some folders/drives may be limited for your account. Sometimes game cannot be installed on C:, only on other drives, and sometimes  vice versa, only on system drive. And of course, avoid installing games to Program Files\Program Files (x86) folders. This folder usually has the most limited rights.
+    </p>
+    <h2>Check your Windows folder (and below) for unarc.dll  if this file exists, delete it</h2>
+    <p>
+        My repacks use custom unarc.dll, NOT compatible with other unarc.dll, which you could download in hope to fix “Unarc.dll Error”. Remember, there are SEVERAL types of those errors, they mean different things. And other unarc.dll wont help.
+    </p>
+    <h1 id="teas">Typical errors and solutions</h1>
+    <h2>
+        I cannot run the setup.exe, its missing or nothing happens when I try to launch it!
+    </h2>
+    <p>
+        Your Windows Defender/SmartScreen (or similar protection software, even browser) blocked it.
+        <ol>
+            <li>While the file is on your desktop or in one of your user folders, right click or press and hold on the file, and click/tap on Properties.</li>
+            <li>
+                Under the General tab, click/tap on the Unblock button, and click/tap on OK.
+            </li>
+            <img src="img/Step2.jpg" alt="">
+        </ol>
+
+    
+    </p>
+
+    <a id="backbtn" href="index.html"><button>Home</button></a>
+</body>
+</html>

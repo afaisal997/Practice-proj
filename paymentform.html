@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Payment Form</title>
+    
+    <!-- Adding external CSS -->
+    <link rel="stylesheet" href="css/payment.css">
+  </head>
+
+  <body>
+
+    <!-- <h3 id="donate" >DONATE</h3>
+      <p>
+        You Guys can help me by donation, i mean i you want and i need it too haha.
+        <br> click on help Retro below
+      </p> -->
+    <form action="">
+      
+      <div class="wrapper"> 
+        <h1><span id="hd1">Payment Form /SSL Protected/</span></h1>
+        <fieldset>
+          <legend><h3>Card Information</h3></legend>
+          <p>
+            Credit Card Type *
+            <select name="cardtype" id="cardtype" required>
+              <option value="">Select a Card Type</option>
+              <option value="visa">VISA</option>
+              <option value="mastercard">MasterCard</option>
+              <option value="rupay">RuPay</option>
+            </select>
+          </p>
+          <p>
+            Credit Card Number *
+            <input type="text" name="card number" id="cardnum" required/>
+            CVV Code* <input type="password" name="cvv" id="cvv" required/>
+          </p>
+          <p>
+            Expiration Date * (Format DD/MM/YY)
+            <input type="date" name="exp date" id="expdate" required/>
+  
+            Name on the Card *
+            <input type="text" name="name" id="" required/>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>
+            <h3>Billing Information</h3>
+          </legend>
+          <p>
+            First Name *
+            <input type="text" name="fname" id="fname" required placeholder="James" />
+            Last Name *
+            <input type="text" name="lname" id="lname" required placeholder="Perkins"/>
+          </p>
+          <p>
+            Male <input type="radio" name="gender" id="gender" required/> Female
+            <input type="radio" name="gender" id="gender" required/>
+          </p>
+          <p>
+            Email Address * <input type="email" name="email" id="" required /> Phone Number *
+            <input type="number" name="pnumber" id="pnumber" required/>
+          </p>
+          <p>
+            Address:
+            <textarea name="address" id="" cols="70" rows="12"required></textarea>
+          </p>
+          <p>Pin Code * <input type="number" name="pincode" id="pincode" required/></p>
+        </fieldset>
+        <p id="submit">
+          Required fields are followed by *
+        </p>
+        <input type="submit" value="Pay Now">
+      </form>
+      <br>
+
+      </div>
+  </body>
+</html>
